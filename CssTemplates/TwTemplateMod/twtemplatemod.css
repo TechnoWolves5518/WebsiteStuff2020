@@ -1,0 +1,104 @@
+/* Notes */
+/* Start Inititial Style Settings */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto Slab', serif;
+}
+
+body .containerwrapper{
+    position: relative;
+    margin-top: -4vw;
+    padding: 6vw 0;
+}
+
+
+
+body .containerwrapper:nth-child(odd):not(#navbarwrapper)::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: -100;
+    clip-path: polygon(0 0, 100% calc(4vw), 100% calc(100% - 4vw), 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% calc(4vw), 100% calc(100% - 4vw), 0% 100%);
+
+}
+
+body .containerwrapper:nth-child(even):not(#navbarwrapper)::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e5e5e5;
+    z-index: -100;
+    clip-path: polygon(0 calc(4vw), 100% 0, 100% 100%, 0 calc(100% - 4vw));
+    -webkit-clip-path: polygon(0 calc(4vw), 100% 0, 100% 100%, 0 calc(100% - 4vw));
+
+}
+body .containerwrapper:nth-child(2):not(#navbarwrapper)::after{
+    background-color: black;
+    z-index: -101;
+
+}
+
+body .containerwrapper:nth-child(2):not(#navbarwrapper){
+    color: white;
+}
+
+body .containerwrapper:last-child:nth-child(even):not(#navbarwrapper)::after{
+    clip-path: polygon(0 calc(4vw), 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 calc(4vw), 100% 0, 100% 100%, 0 100%);
+
+    background-color: black;
+}
+body .containerwrapper:last-child:nth-child(odd):not(#navbarwrapper)::after{
+    clip-path: polygon(0 0, 100% calc(4vw), 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% calc(4vw), 100% 100%, 0% 100%);
+
+    background-color: black;
+}
+.panel{
+    background-color: whitesmoke;
+    box-shadow: 0 0 20px -8px gray;
+}
+
+/* navbar */
+/* Note to self - choose either li or a for changing backgrounds both here and in original, because editing both can get confusing. Also instead of .navbar make it #navbarwrapper on the wrapper in this and the template. Along with this, go change the image to border box as well. Also stop being lazy and fix the template navbar padding */
+
+#navbarwrapper{
+    background-color: #a80000;
+}
+
+#navbaritems li a:hover{
+    background-color: #7f7f7f;
+}
+
+/* Footer */
+#footer{
+    color: white;
+}
+#footer a{
+    color: white;
+}
+#footer svg{
+    color: white;
+}
+#legalinfofooter a{
+    padding: 0;
+}
+
+.navbar{
+    z-index:100;
+}
+
