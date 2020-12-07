@@ -1,0 +1,145 @@
+/* Welcome Section*/
+#welcome{
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index:1;
+}
+
+#welcomeexcerpt{
+    -webkit-box-flex: 7;
+        -ms-flex: 7;
+            flex: 7;
+}
+#welcomespacer1{
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+#welcomeimage{
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow:  unset;
+    -webkit-box-shadow: 0 0 30px -8px gray;
+            box-shadow: 0 0 30px -8px gray;
+    
+}
+#welcomeimage::after{
+    background-color: red;
+}
+#welcomeimage img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+#welcomeexcerptspacer1{
+    height: 50px;
+}
+#welcomeexcerptspacer2{
+    height: 50px;
+}
+
+#welcome .button{
+    text-align: right;
+}
+
+/* Recent News Section */
+#recentnews{
+    z-index:1;
+}
+
+#recentnews .panel{
+    height: 50vh;
+    max-height: 50vh;
+    overflow: auto;
+}
+
+#headerrecentnews{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+#headerrecentnews h2{
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+
+.trellocard h2{
+    font-size: 1.75em;
+}
+
+#creations{
+    text-align: center;
+}
+
+#creations .image{
+    -webkit-clip-path: circle(45%);
+            clip-path: circle(45%);
+    width: 300px;
+    height: 300px;
+    margin:auto;
+}
+
+#creations img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.pageheader{
+    overflow: hidden;
+}
+
+.pageheader .video {
+    position: absolute;
+    top: -15%;
+    left: 0;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+    height: 0;
+    z-index:-100;
+}
+.pageheader .video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 100%;
+}
+.pageheader .video::after {
+    content: "";
+    top:0;
+    left:0;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background-color:black;
+    opacity:.5;
+}
+.pageheader img{
+    padding: 25px 0;
+}
+
+@media only screen and (max-width: 60em) {
+    body #welcome .button{
+        text-align: center;
+    }
+    body .pageheader .video{
+        display: none;
+    }
+}
