@@ -1,0 +1,10 @@
+#quickstats{
+    text-align: center;
+}
+#videoaboutfirst iframe{
+    width: 100%;
+    height: 100%;
+}
+#videoaboutfirst {
+    overflow: unset;
+}
