@@ -1,0 +1,16 @@
+.trellocard{
+    margin: 10px;
+}
+
+.trellocardsholder{
+    display: flex;
+    flex-direction: column;
+}
+
+.recentnewsheader{
+    display: flex;
+}
+
+.recentnewsheader h2{
+    flex: 1;
+}
