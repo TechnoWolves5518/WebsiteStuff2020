@@ -1,0 +1,15 @@
+
+
+<blogposts>
+
+    <tabtitle>Blog</tabtitle>
+    <pagetitle>The Blog</pagetitle>
+    
+    <post>
+        <title>Title</title>
+        <date>Date</date>
+        <author>Aneesh Sreedhara</author>
+        <paragraph>Hello World!</paragraph>
+    </post>
+
+</blogposts>
