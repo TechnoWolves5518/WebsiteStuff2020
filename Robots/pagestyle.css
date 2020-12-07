@@ -1,0 +1,12 @@
+.robotimage{
+    display: flex;
+    align-items:center;
+}
+
+.robotimage{
+    clip-path: circle(40% at 50% 50%);
+}
+
+.robots li{
+    padding-left:20px; 
+}
