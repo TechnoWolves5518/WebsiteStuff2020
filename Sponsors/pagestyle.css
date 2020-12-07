@@ -1,0 +1,53 @@
+.trellocard{
+    margin: 10px;
+    padding-top: 50px;
+    position: relative;
+}
+.sponsorLevel{
+    top: 0;
+    display: block;
+    position: absolute;
+    left:  0;
+    width: 100%;
+    background-color: black;
+    box-shadow: 0 0 20px -8px grey;
+    font-weight: 1000;
+}
+
+.sponsorLevel.Bronze{
+    background-color: #cd7f32;
+    color: white;
+}
+
+.sponsorLevel.Silver{
+    background-color: silver;
+    color: white;
+}
+
+.sponsorLevel.Gold{
+    background-color: gold;
+    color: white;
+}
+
+.sponsorLevel.Diamond{
+    background-color: lightskyblue ;
+    color: white;
+}
+
+.trellocardsholder{
+    display: flex;
+    flex-direction: column;
+}
+
+#headerhelpus{
+    display: flex;
+}
+#headerhelpus h3{
+    flex: 1;
+}
+
+.sponsorlogo{
+    max-height:25vh;
+    max-width:100%;
+    object-fit: contain;
+}
